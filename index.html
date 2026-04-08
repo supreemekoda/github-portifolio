@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{name}} Portfolio</title>
+<link rel="stylesheet" href="{{url_for('static', filename='style/style.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>DevX</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<!-- HERO WITH PROFILE -->
+<section class="hero">
+
+  <!-- PROFILE IMAGE -->
+  <img src="{{url_for('static', filename='images/profile.jpeg')}}" class="profile-img" alt="Profile">
+
+  <!-- TEXT -->
+  <div class="hero-text">
+    <h1>Hello, I'm <span class="gradient-text">{{name}}</span></h1>
+    <p>Software Developer • Network Engineer • Web Developer</p>
+    <button class="btn">Download CV</button>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h3>About Me</h3>
+  <div class="card">
+    <p>
+      I design and build modern systems combining software engineering,
+      networking, and web technologies. I focus on performance,
+      security, and clean UI.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h3>Skills</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Web Development</h4>
+      <p>HTML, CSS, JavaScript, React</p>
+    </div>
+    <div class="card">
+      <h4>Software Development</h4>
+      <p>Python, Flutter, Rust</p>
+    </div>
+    <div class="card">
+      <h4>Networking</h4>
+      <p>Cisco, Routing, Security</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>AI System</h4>
+      <p>Automation tool</p>
+    </div>
+    <div class="card">
+      <h4>Network Design</h4>
+      <p>Enterprise setup</p>
+    </div>
+    <div class="card">
+      <h4>Portfolio</h4>
+      <p>Modern website</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 DevX</p>
+</footer>
+
+</body>
+</html>
